@@ -1,0 +1,4 @@
+/* Apply a brightness and contrast filter to the tile images */
+.custom-tile-layer .leaflet-tile {
+  filter: contrast(0.5);
+}

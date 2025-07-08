@@ -1,0 +1,14 @@
+export { default as CeleryIcon } from './ic_celery';
+export { default as CrustaceansIcon } from './ic_crustaceans';
+export { default as EggIcon } from './ic_egg';
+export { default as FishIcon } from './ic_fish';
+export { default as GlutenIcon } from './ic_gluten';
+export { default as LactoseIcon } from './ic_lactose';
+export { default as LupineIcon } from './ic_lupine';
+export { default as MolluscsIcon } from './ic_molluscs';
+export { default as MustardIcon } from './ic_mustard';
+export { default as NutsIcon } from './ic_nuts';
+export { default as PeanutsIcon } from './ic_peanuts';
+export { default as SesameIcon } from './ic_sesame';
+export { default as SoyIcon } from './ic_soy';
+export { default as SulphurIcon } from './ic_sulphur';

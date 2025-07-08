@@ -1,0 +1,24 @@
+import { alpha, useTheme } from '@mui/material';
+import React from 'react';
+import { Iconify } from 'src/components/iconify';
+
+type IconProps = {
+  color?: string;
+  isActive?: boolean;
+};
+
+const CarouselIcon: React.FC<IconProps> = ({ color, isActive }) => {
+  const theme = useTheme();
+
+  const colorUsed = isActive ? color || theme.palette.primary.main : theme.palette.text.secondary;
+
+  return (
+    <Iconify
+      icon="solar:posts-carousel-horizontal-bold-duotone"
+      width={32}
+      style={{ color: colorUsed }}
+    />
+  );
+};
+
+export default CarouselIcon;

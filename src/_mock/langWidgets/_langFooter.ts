@@ -1,0 +1,208 @@
+import { ILangWidget } from 'src/types/product';
+
+export const LangFooter: ILangWidget = [
+  {
+    feId: 'WebsiteURL',
+    desc: [
+      { lang: 'en', val: 'Website URL' },
+      { lang: 'de', val: 'Webseite URL' },
+      { lang: 'es', val: 'URL del sitio web' },
+      { lang: 'fr', val: 'URL du site' },
+      { lang: 'it', val: 'URL del sito web' },
+    ],
+    value: [
+      { lang: 'en', val: [] },
+      { lang: 'de', val: [] },
+      { lang: 'es', val: [] },
+      { lang: 'fr', val: [] },
+      { lang: 'it', val: [] },
+    ],
+  },
+  {
+    feId: 'ShowWebsiteURL',
+    desc: [
+      { lang: 'en', val: 'Show Website URL' },
+      { lang: 'de', val: 'Webseite URL anzeigen' },
+      { lang: 'es', val: 'Mostrar URL del sitio web' },
+      { lang: 'fr', val: 'Afficher l’URL du site' },
+      { lang: 'it', val: 'Mostra URL del sito web' },
+    ],
+    value: [
+      { lang: 'en', val: [] },
+      { lang: 'de', val: [] },
+      { lang: 'es', val: [] },
+      { lang: 'fr', val: [] },
+      { lang: 'it', val: [] },
+    ],
+  },
+  {
+    feId: 'XURL',
+    desc: [
+      { lang: 'en', val: 'X URL' },
+      { lang: 'de', val: 'X URL' },
+      { lang: 'es', val: 'X URL' },
+      { lang: 'fr', val: 'X URL' },
+      { lang: 'it', val: 'X URL' },
+    ],
+    value: [
+      { lang: 'en', val: [] },
+      { lang: 'de', val: [] },
+      { lang: 'es', val: [] },
+      { lang: 'fr', val: [] },
+      { lang: 'it', val: [] },
+    ],
+  },
+  {
+    feId: 'ShowXURL',
+    desc: [
+      { lang: 'en', val: 'Show X URL' },
+      { lang: 'de', val: 'X URL anzeigen' },
+      { lang: 'es', val: 'Mostrar X URL' },
+      { lang: 'fr', val: 'Afficher X URL' },
+      { lang: 'it', val: 'Mostra X URL' },
+    ],
+    value: [
+      { lang: 'en', val: [] },
+      { lang: 'de', val: [] },
+      { lang: 'es', val: [] },
+      { lang: 'fr', val: [] },
+      { lang: 'it', val: [] },
+    ],
+  },
+  {
+    feId: 'InstagramURL',
+    desc: [
+      { lang: 'en', val: 'Instagram URL' },
+      { lang: 'de', val: 'Instagram URL' },
+      { lang: 'es', val: 'Instagram URL' },
+      { lang: 'fr', val: 'Instagram URL' },
+      { lang: 'it', val: 'Instagram URL' },
+    ],
+    value: [
+      { lang: 'en', val: [] },
+      { lang: 'de', val: [] },
+      { lang: 'es', val: [] },
+      { lang: 'fr', val: [] },
+      { lang: 'it', val: [] },
+    ],
+  },
+  {
+    feId: 'ShowInstagramURL',
+    desc: [
+      { lang: 'en', val: 'Show Instagram URL' },
+      { lang: 'de', val: 'Instagram URL anzeigen' },
+      { lang: 'es', val: 'Mostrar Instagram URL' },
+      { lang: 'fr', val: 'Afficher Instagram URL' },
+      { lang: 'it', val: 'Mostra Instagram URL' },
+    ],
+    value: [
+      { lang: 'en', val: [] },
+      { lang: 'de', val: [] },
+      { lang: 'es', val: [] },
+      { lang: 'fr', val: [] },
+      { lang: 'it', val: [] },
+    ],
+  },
+  {
+    feId: 'FacebookURL',
+    desc: [
+      { lang: 'en', val: 'Facebook URL' },
+      { lang: 'de', val: 'Facebook URL' },
+      { lang: 'es', val: 'Facebook URL' },
+      { lang: 'fr', val: 'Facebook URL' },
+      { lang: 'it', val: 'Facebook URL' },
+    ],
+    value: [
+      { lang: 'en', val: [] },
+      { lang: 'de', val: [] },
+      { lang: 'es', val: [] },
+      { lang: 'fr', val: [] },
+      { lang: 'it', val: [] },
+    ],
+  },
+  {
+    feId: 'ShowFacebookURL',
+    desc: [
+      { lang: 'en', val: 'Show Facebook URL' },
+      { lang: 'de', val: 'Facebook URL anzeigen' },
+      { lang: 'es', val: 'Mostrar Facebook URL' },
+      { lang: 'fr', val: 'Afficher Facebook URL' },
+      { lang: 'it', val: 'Mostra Facebook URL' },
+    ],
+    value: [
+      { lang: 'en', val: [] },
+      { lang: 'de', val: [] },
+      { lang: 'es', val: [] },
+      { lang: 'fr', val: [] },
+      { lang: 'it', val: [] },
+    ],
+  },
+  {
+    feId: 'LinkedinURL',
+    desc: [
+      { lang: 'en', val: 'Linkedin URL' },
+      { lang: 'de', val: 'Linkedin URL' },
+      { lang: 'es', val: 'Linkedin URL' },
+      { lang: 'fr', val: 'Linkedin URL' },
+      { lang: 'it', val: 'Linkedin URL' },
+    ],
+    value: [
+      { lang: 'en', val: [] },
+      { lang: 'de', val: [] },
+      { lang: 'es', val: [] },
+      { lang: 'fr', val: [] },
+      { lang: 'it', val: [] },
+    ],
+  },
+  {
+    feId: 'ShowLinkedinURL',
+    desc: [
+      { lang: 'en', val: 'Show Linkedin URL' },
+      { lang: 'de', val: 'Linkedin URL anzeigen' },
+      { lang: 'es', val: 'Mostrar Linkedin URL' },
+      { lang: 'fr', val: 'Afficher Linkedin URL' },
+      { lang: 'it', val: 'Mostra Linkedin URL' },
+    ],
+    value: [
+      { lang: 'en', val: [] },
+      { lang: 'de', val: [] },
+      { lang: 'es', val: [] },
+      { lang: 'fr', val: [] },
+      { lang: 'it', val: [] },
+    ],
+  },
+  {
+    feId: 'WebsiteName',
+    desc: [
+      { lang: 'en', val: 'Website Name' },
+      { lang: 'de', val: 'Webseitenname' },
+      { lang: 'es', val: 'Nombre del sitio web' },
+      { lang: 'fr', val: 'Nom du site web' },
+      { lang: 'it', val: 'Nome del sito web' },
+    ],
+    value: [
+      { lang: 'en', val: [] },
+      { lang: 'de', val: [] },
+      { lang: 'es', val: [] },
+      { lang: 'fr', val: [] },
+      { lang: 'it', val: [] },
+    ],
+  },
+  {
+    feId: 'Imprint',
+    desc: [
+      { lang: 'en', val: 'Imprint' },
+      { lang: 'de', val: 'Impressum' },
+      { lang: 'es', val: 'Aviso legal' },
+      { lang: 'fr', val: 'Mentions légales' },
+      { lang: 'it', val: 'Impressum' },
+    ],
+    value: [
+      { lang: 'en', val: [] },
+      { lang: 'de', val: [] },
+      { lang: 'es', val: [] },
+      { lang: 'fr', val: [] },
+      { lang: 'it', val: [] },
+    ],
+  },
+];

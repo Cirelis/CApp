@@ -1,0 +1,88 @@
+import { v4 as uuid } from 'uuid';
+import { IWidget } from 'src/types/product';
+import { getDesc, getValue } from '../langComponents/_langComponents';
+
+export const Story: IWidget = {
+  id: uuid(),
+  name: 'Story',
+  order: 0,
+  drop: 0,
+  category: 'Showcase',
+  company: '',
+  open: false,
+  label: {
+    id: 'story',
+    name: 'Story',
+    color: 'black',
+  },
+  childs: [
+    {
+      id: 'Head',
+      open: true,
+      show: false,
+      attributes: {
+        StoryTag: {
+          feId: 'StoryTag',
+          template: true,
+          keyValueTemp: [],
+          translate: false,
+          data: false,
+          valueType: 'value',
+          name: getDesc('StoryTag'),
+          value: getValue('StoryTag'),
+        },
+        StoryTitle: {
+          feId: 'StoryTitle',
+          template: true,
+          keyValueTemp: [],
+          translate: true,
+          data: false,
+          valueType: 'value',
+          name: getDesc('StoryTitle'),
+          value: getValue('StoryTitle'),
+        },
+        StoryPicture: {
+          feId: 'StoryPicture',
+          template: true,
+          keyValueTemp: [],
+          translate: false,
+          data: false,
+          valueType: 'value',
+          name: getDesc('StoryPicture'),
+          value: getValue('StoryPicture'),
+        },
+        StoryFileName: {
+          feId: 'StoryFileName',
+          template: true,
+          keyValueTemp: [],
+          translate: false,
+          data: false,
+          valueType: 'value',
+          name: getDesc('StoryFileName'),
+          value: getValue('StoryFileName'),
+        },
+        StoryShowPicture: {
+          feId: 'StoryShowPicture',
+          template: true,
+          keyValueTemp: [],
+          translate: false,
+          data: false,
+          valueType: 'value',
+          name: getDesc('StoryShowPicture'),
+          value: getValue('StoryShowPicture'),
+        },
+        StoryLongDescription: {
+          feId: 'StoryLongDescription',
+          template: true,
+          keyValueTemp: [],
+          translate: true,
+          data: false,
+          valueType: 'value',
+          name: getDesc('StoryLongDescription'),
+          value: getValue('StoryLongDescription'),
+        },
+      },
+    },
+  ],
+  style: {},
+};

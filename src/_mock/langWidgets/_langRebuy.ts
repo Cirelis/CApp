@@ -1,0 +1,191 @@
+import { ILangWidget } from 'src/types/product';
+
+export const LangRebuy: ILangWidget = [
+  {
+    feId: 'GoToTop',
+    desc: [
+      { lang: 'en', val: 'Go to top' },
+      { lang: 'de', val: 'Nach oben' },
+      { lang: 'es', val: 'Ir arriba' },
+      { lang: 'fr', val: 'Aller en haut' },
+      { lang: 'it', val: 'Vai in cima' },
+    ],
+    value: [
+      { lang: 'en', val: [] },
+      { lang: 'de', val: [] },
+      { lang: 'es', val: [] },
+      { lang: 'fr', val: [] },
+      { lang: 'it', val: [] },
+    ],
+  },
+  {
+    feId: 'ShowContactMail',
+    desc: [
+      { lang: 'en', val: 'Show Contact Mail' },
+      { lang: 'de', val: 'Kontakt-Mail anzeigen' },
+      { lang: 'es', val: 'Mostrar correo de contacto' },
+      { lang: 'fr', val: 'Afficher l’email de contact' },
+      { lang: 'it', val: 'Mostra email di contatto' },
+    ],
+    value: [
+      { lang: 'en', val: [] },
+      { lang: 'de', val: [] },
+      { lang: 'es', val: [] },
+      { lang: 'fr', val: [] },
+      { lang: 'it', val: [] },
+    ],
+  },
+  {
+    feId: 'ContactMail',
+    desc: [
+      { lang: 'en', val: 'Contact Mail' },
+      { lang: 'de', val: 'Kontakt-Mail' },
+      { lang: 'es', val: 'Correo de contacto' },
+      { lang: 'fr', val: 'Email de contact' },
+      { lang: 'it', val: 'Email di contatto' },
+    ],
+    value: [
+      { lang: 'en', val: [] },
+      { lang: 'de', val: [] },
+      { lang: 'es', val: [] },
+      { lang: 'fr', val: [] },
+      { lang: 'it', val: [] },
+    ],
+  },
+  {
+    feId: 'ShowRebuy',
+    desc: [
+      { lang: 'en', val: 'Show Rebuy' },
+      { lang: 'de', val: 'Rebuy anzeigen' },
+      { lang: 'es', val: 'Mostrar Rebuy' },
+      { lang: 'fr', val: 'Afficher Rebuy' },
+      { lang: 'it', val: 'Mostra Rebuy' },
+    ],
+    value: [
+      { lang: 'en', val: [] },
+      { lang: 'de', val: [] },
+      { lang: 'es', val: [] },
+      { lang: 'fr', val: [] },
+      { lang: 'it', val: [] },
+    ],
+  },
+  {
+    feId: 'HoverButtonProductURL',
+    desc: [
+      { lang: 'en', val: 'URL to Product in Shop' },
+      { lang: 'de', val: 'URL zum Produkt im Shop' },
+      { lang: 'es', val: 'URL al producto en la tienda' },
+      { lang: 'fr', val: 'URL du produit dans la boutique' },
+      { lang: 'it', val: 'URL del prodotto nel negozio' },
+    ],
+    value: [
+      { lang: 'en', val: [] },
+      { lang: 'de', val: [] },
+      { lang: 'es', val: [] },
+      { lang: 'fr', val: [] },
+      { lang: 'it', val: [] },
+    ],
+  },
+  {
+    feId: 'DiscountCode',
+    desc: [
+      { lang: 'en', val: 'Discount Code' },
+      { lang: 'de', val: 'Rabattcode' },
+      { lang: 'es', val: 'Código de descuento' },
+      { lang: 'fr', val: 'Code de réduction' },
+      { lang: 'it', val: 'Codice sconto' },
+    ],
+    value: [
+      { lang: 'en', val: [] },
+      { lang: 'de', val: [] },
+      { lang: 'es', val: [] },
+      { lang: 'fr', val: [] },
+      { lang: 'it', val: [] },
+    ],
+  },
+  {
+    feId: 'DiscountCodeDescription',
+    desc: [
+      { lang: 'en', val: 'Discount Code Description' },
+      { lang: 'de', val: 'Rabattcode-Beschreibung' },
+      { lang: 'es', val: 'Descripción del código de descuento' },
+      { lang: 'fr', val: 'Description du code de réduction' },
+      { lang: 'it', val: 'Descrizione del codice sconto' },
+    ],
+    value: [
+      { lang: 'en', val: [] },
+      { lang: 'de', val: [] },
+      { lang: 'es', val: [] },
+      { lang: 'fr', val: [] },
+      { lang: 'it', val: [] },
+    ],
+  },
+  {
+    feId: 'ShowCover',
+    desc: [
+      { lang: 'en', val: 'Show Cover' },
+      { lang: 'de', val: 'Show Cover' },
+      { lang: 'es', val: 'Show Cover' },
+      { lang: 'fr', val: 'Show Cover' },
+      { lang: 'it', val: 'Show Cover' },
+    ],
+    value: [
+      { lang: 'en', val: [''] },
+      { lang: 'de', val: [''] },
+      { lang: 'es', val: [''] },
+      { lang: 'fr', val: [''] },
+      { lang: 'it', val: [''] },
+    ],
+  },
+  {
+    feId: 'CoverImage',
+    desc: [
+      { lang: 'en', val: 'Cover Image' },
+      { lang: 'de', val: 'Cover Image' },
+      { lang: 'es', val: 'Cover Image' },
+      { lang: 'fr', val: 'Cover Image' },
+      { lang: 'it', val: 'Cover Image' },
+    ],
+    value: [
+      { lang: 'en', val: [''] },
+      { lang: 'de', val: [''] },
+      { lang: 'es', val: [''] },
+      { lang: 'fr', val: [''] },
+      { lang: 'it', val: [''] },
+    ],
+  },
+  {
+    feId: 'CoverImgFile',
+    desc: [
+      { lang: 'en', val: 'Cover Image File' },
+      { lang: 'de', val: 'Cover Image File' },
+      { lang: 'es', val: 'Cover Image File' },
+      { lang: 'fr', val: 'Cover Image File' },
+      { lang: 'it', val: 'Cover Image File' },
+    ],
+    value: [
+      { lang: 'en', val: [''] },
+      { lang: 'de', val: [''] },
+      { lang: 'es', val: [''] },
+      { lang: 'fr', val: [''] },
+      { lang: 'it', val: [''] },
+    ],
+  },
+  {
+    feId: 'ShowPanorama',
+    desc: [
+      { lang: 'en', val: 'Show Panorama' },
+      { lang: 'de', val: 'Show Panorama' },
+      { lang: 'es', val: 'Show Panorama' },
+      { lang: 'fr', val: 'Show Panorama' },
+      { lang: 'it', val: 'Show Panorama' },
+    ],
+    value: [
+      { lang: 'en', val: [''] },
+      { lang: 'de', val: [''] },
+      { lang: 'es', val: [''] },
+      { lang: 'fr', val: [''] },
+      { lang: 'it', val: [''] },
+    ],
+  },
+];

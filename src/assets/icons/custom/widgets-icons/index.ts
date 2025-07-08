@@ -1,0 +1,15 @@
+export { default as CertificatesIcon } from './ic_certificates';
+export { default as Co2FootprintIcon } from './ic_co2-footprint';
+export { default as DocumentsIcon } from './ic_documents';
+export { default as DurabilityIcon } from './ic_durability';
+export { default as FooterIcon } from './ic_footer';
+export { default as HeadIcon } from './ic_head';
+export { default as InstructionIcon } from './ic_instruction';
+export { default as ProductHeadIcon } from './ic_product-head';
+export { default as ProductInfoIcon } from './ic_product-info';
+export { default as ReBuyIcon } from './ic_re-buy';
+export { default as RecyclingIcon } from './ic_recycling';
+export { default as StoreLocatorIcon } from './ic_store-locator';
+export { default as TraceabilityIcon } from './ic_traceability';
+export { default as WarningsIcon } from './ic_warnings';
+export { default as SustainabilityIcon } from './ic_sustainability';

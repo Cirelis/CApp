@@ -1,0 +1,66 @@
+import { memo } from 'react';
+// @mui
+import Box, { BoxProps } from '@mui/material/Box';
+
+function LogoIcon({ ...other }: BoxProps) {
+  return (
+    <Box
+      component="svg"
+      width="100%"
+      height="100%"
+      viewBox="0 0 1200 1200"
+      xmlns="http://www.w3.org/2000/svg"
+      {...other}
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M409.353 39.3637C409.353 39.3637 552.188 -19.3438 742.912 6.63234C742.912 6.63234 906.05 95.8348 978.749 398.92L1025 388.324C1007.88 420.199 971.094 475.977 934.708 521.523C898.55 571.865 877.611 585.679 819.407 558.469C656.964 482.531 819.407 558.469 656.964 482.531C656.968 482.529 704.992 469.419 704.992 469.419C704.992 469.419 693.829 210.422 409.353 39.3637Z"
+        fill="url(#paint0_linear_2977_8909)"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M589.596 259.777C383.061 354.755 285.117 464.675 248.5 694C162 667 32.2038 565.445 7.62016 519.334C40.0083 380.483 120.571 158.209 369.926 58.1759C413.53 76.941 534.948 165.455 589.596 259.777Z"
+        fill="#212B36"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M0 566.918C186.678 771 460.221 794.182 674.576 724.697C683.832 721.697 718.415 710.122 721.114 731.01C713.047 809.256 689.725 919.532 659.889 977.351C653.746 989.255 644.784 990.563 631 993.63C365.9 1052.62 162.118 992.826 58.1383 893.705C12.1522 779.078 3.69566 664.33 0 566.918Z"
+        fill="url(#paint1_linear_2977_8909)"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_2977_8909"
+          x1="766.977"
+          y1="-180.009"
+          x2="-0.00205134"
+          y2="1364.97"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#FFAB00" />
+          <stop offset="0.136705" stopColor="#80AB2B" />
+          <stop offset="0.3" stopColor="#00AB55" />
+          <stop offset="0.465196" stopColor="#00AB55" />
+          <stop offset="0.902096" stopColor="#00B8D9" />
+        </linearGradient>
+        <linearGradient
+          id="paint1_linear_2977_8909"
+          x1="846.981"
+          y1="-138.375"
+          x2="-103.681"
+          y2="1320.47"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0.0187618" stopColor="#FFAB00" />
+          <stop offset="0.115031" stopColor="#00AB55" />
+          <stop offset="0.465196" stopColor="#00AB55" />
+          <stop offset="0.902096" stopColor="#00B8D9" />
+        </linearGradient>
+      </defs>
+    </Box>
+  );
+}
+
+export default memo(LogoIcon);

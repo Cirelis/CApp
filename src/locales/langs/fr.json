@@ -1,0 +1,192 @@
+{
+  "nav": {
+    "overview": "Aperçu",
+    "dashboard": "Tableau de bord",
+    "products": "Tous les produits",
+    "analytics": "Analyses",
+    "data": "Donnés",
+    "user": "Utilisateur",
+    "userlist": "Utilisateurs",
+    "account": "Compte",
+    "management": "Gestion",
+    "companyA": "Dirección de la empresa",
+    "company": "Compañía"
+  },
+  "general": {
+    "title": "Général",
+    "saveButton": "Enregistrer les modifications",
+    "deleteButton": "Supprimer",
+    "cancelButton": "Annuler",
+    "stayButton": "Rester",
+    "search": "Rechercher...",
+    "selected": "Sélectionné",
+    "showMore": "Voir plus",
+    "showLess": "Voir moins",
+    "download": "Télécharger",
+    "addRow": "Ajouter entrée",
+    "edit": "Modifier",
+    "import": "Importer"
+  },
+  "mngmt": {
+    "userlist": {
+      "title": "Liste des utilisateurs",
+      "newUser": "Nouvel utilisateur",
+      "userTotal": "Utilisateurs sur le total",
+      "name": "Nom",
+      "role": "Rôle",
+      "email": "Email",
+      "newUserText": "Pour créer un nouvel utilisateur dans votre entreprise, veuillez contacter le support à it@cirelis.de.",
+      "deleteUserText": "Pour supprimer un utilisateur dans votre entreprise, veuillez contacter le support à it@cirelis.de.",
+      "userText": "Veuillez ajouter les informations suivantes dans votre demande par e-mail :",
+      "company": "Entreprise",
+      "firstname": "Prénom",
+      "lastname": "Nom de famille",
+      "operation": "Opération : Créer, Mettre à jour, Supprimer"
+    },
+    "companyaccount": {
+      "title": "Compte de l'entreprise",
+      "general": "Général",
+      "billing": "Facturation",
+      "companyName": "Nom de l'entreprise",
+      "abo": "Abonnement",
+      "branche": "Secteur d'activité",
+      "city": "Ville",
+      "state": "État/Région",
+      "country": "Pays",
+      "plz": "Code postal",
+      "street": "Rue",
+      "housenumber": "Numéro de maison",
+      "size": "Taille",
+      "current": "Actuel",
+      "plan": "Forfait",
+      "cancelPlan": "Annuler le forfait",
+      "upgradePlan": "Améliorer le forfait",
+      "invoiceHistory": "Historique des factures",
+      "legal": {
+        "contactInformation": "Contact Information",
+        "legal": "Legal",
+        "phone": "Phone Number of Company",
+        "email": "Email Address of Company",
+        "authorizedRepresentative": "Authorized Representative",
+        "nameRepresentative": "Full Name",
+        "titleRepresentative": "Title",
+        "commercialRegisterInformation": "Commercial Register Information",
+        "commercialRegisterNumber": "Commercial Register Number",
+        "competentRegistryCourt": "Competent Registry Court",
+        "vatInformation": "VAT Information",
+        "vatId": "VAT-ID"
+      }
+    },
+    "profile": {
+      "title": "Profil",
+      "general": "Général",
+      "security": "Sécurité",
+      "name": "Nom",
+      "email": "Adresse e-mail",
+      "role": "Rôle",
+      "oldPw": "Ancien mot de passe",
+      "newPw": "Nouveau mot de passe",
+      "confirmPw": "Confirmer le nouveau mot de passe",
+      "textPw": "Le mot de passe doit contenir au moins 6 caractères",
+      "updatePhoto": "Mettre à jour la photo",
+      "uploadPhoto": "Télécharger une photo",
+      "allow": "Autorisé *.jpeg, *.jpg, *.png, *.gif"
+    }
+  },
+  "productList": {
+    "title": "Liste des produits",
+    "newProd": "Nouveau produit",
+    "tabs": {
+      "all": "Tous",
+      "online": "En ligne",
+      "offline": "Hors ligne",
+      "error": "Erreur"
+    },
+    "table": {
+      "state": "État",
+      "name": "Nom",
+      "tags": "Étiquettes",
+      "template": "Modèle",
+      "version": "Version",
+      "notPublished": "Pas encore publié"
+    },
+    "search": "Rechercher...",
+    "tags": "Étiquettes",
+    "templates": "Modèles",
+    "noTemplate": "Aucun modèle sélectionné",
+    "notPublishedTipp": "Les nouvelles modifications ne sont pas encore publiées",
+    "publishedVersion": "Version publiée : V",
+    "notPublished": "Pas encore publié",
+    "pageEditTipp": "Accéder directement à l'éditeur de page",
+    "dense": "Dense",
+    "rowsPerPage": "Lignes par page",
+    "newProdDialog": {
+      "title": "Créer un nouveau produit",
+      "name": "Nom",
+      "customId": "ID produit personnalisé",
+      "tags": "Étiquettes",
+      "customizedTags": "Étiquettes personnalisées",
+      "cancel": "Annuler",
+      "createNewProd": "Créer un nouveau produit"
+    },
+    "details": {
+      "prodName": "Nom du produit",
+      "latestPublishedVersion": "Dernière version publiée : V",
+      "digitalProductLabel": "Étiquette de produit numérique",
+      "productIds": "Product ID's",
+      "customId": "Personnalisé ID",
+      "tags": "Balises personnalisées",
+      "template": "Modèle",
+      "edit": "Modifier le code QR",
+      "archive": "Produit d'archive",
+      "archiveText": "Êtes-vous sûr de vouloir archiver {{product}}?",
+      "inProgressMessage": {
+        "title": "Pas encore publié",
+        "definition1": "Les modifications non publiées sur votre étiquette de produit déclenchent automatiquement une ",
+        "definition2": "nouvelle version enregistrée et non publiée",
+        "definition3": " de votre étiquette de produit.",
+        "definition4": "Cela active l'icône \"Pas encore publié\"."
+      }
+    }
+  },
+  "overview": {
+    "title": "Bonjour, bienvenue de nouveau",
+    "guest": "Invité",
+    "kpis": "KPIs sur vos produits",
+    "analytics": {
+      "online": "En ligne",
+      "progress": "Progrès",
+      "offline": "Hors ligne",
+      "error": "Erreurs",
+      "usedProducts": "Produits utilisés",
+      "upgradeProd": "Obtenir plus de produits",
+      "top5Tags": "Top 5 étiquettes par #Produits",
+      "top5Templates": "Top 5 modèles par #Produits",
+      "performance": "Analyse de performance",
+      "scansPerMonth": "Scans ce mois-ci",
+      "rebuyClicks": "Clics de rachat ce mois-ci",
+      "retention": "Taux de rétention en %",
+      "usedScans": "Budget de scans utilisé",
+      "upgradeScan": "Obtenir plus de scans"
+    }
+  },
+  "labelEditor": {
+    "orientation": "Orientation",
+    "orientationTT": "Définissez l'alignement des éléments principaux. Choisissez entre gauche ou centré.",
+    "style": {
+      "layout": "Configuration générale de mise en page",
+      "card": "Disposition en carte",
+      "cardTT": "Activer ou désactiver le thème carte",
+      "corners": "Coins",
+      "cornersTT": "Activer ou désactiver la conception des coins"
+    },
+    "nav": {
+      "cover": "Cover",
+      "design": "Conception",
+      "widgets": "Widgets",
+      "components": "Composants",
+      "hoverButton": "Bouton au survol",
+      "languages": "Langues"
+    }
+  }
+}

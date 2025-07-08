@@ -1,0 +1,192 @@
+{
+  "nav": {
+    "overview": "Visión general",
+    "dashboard": "Panel",
+    "products": "Todos los productos",
+    "analytics": "Analítica",
+    "data": "Datos",
+    "user": "Usuario",
+    "userlist": "Usuarios",
+    "account": "Cuenta",
+    "management": "Administración",
+    "companyA": "Adresse de l'entreprise",
+    "company": "Entreprise"
+  },
+  "general": {
+    "title": "General",
+    "saveButton": "Guardar cambios",
+    "deleteButton": "Eliminar",
+    "cancelButton": "Cancelar",
+    "stayButton": "Permanecer",
+    "search": "Buscar...",
+    "selected": "Seleccionado",
+    "showMore": "Mostrar más",
+    "showLess": "Mostrar menos",
+    "download": "Descargar",
+    "addRow": "Añadir entrada",
+    "edit": "Editar",
+    "import": "Importar"
+  },
+  "mngmt": {
+    "userlist": {
+      "title": "Lista de usuarios",
+      "newUser": "Nuevo usuario",
+      "userTotal": "Usuarios en total",
+      "name": "Nombre",
+      "role": "Rol",
+      "email": "Correo electrónico",
+      "newUserText": "Para crear un nuevo usuario en su empresa, por favor contacte con el soporte en it@cirelis.de.",
+      "deleteUserText": "Para eliminar un usuario en su empresa, por favor contacte con el soporte en it@cirelis.de.",
+      "userText": "Por favor, añada la siguiente información en su solicitud por correo:",
+      "company": "Empresa",
+      "firstname": "Nombre",
+      "lastname": "Apellido",
+      "operation": "Operación: Crear, Actualizar, Eliminar"
+    },
+    "companyaccount": {
+      "title": "Cuenta de la empresa",
+      "general": "General",
+      "billing": "Facturación",
+      "companyName": "Nombre",
+      "abo": "Suscripción",
+      "branche": "Industria",
+      "city": "Ciudad",
+      "state": "Estado/Región",
+      "country": "País",
+      "plz": "Código postal",
+      "street": "Calle",
+      "housenumber": "Número de casa",
+      "size": "Tamaño",
+      "current": "Actual",
+      "plan": "Plan",
+      "cancelPlan": "Cancelar plan",
+      "upgradePlan": "Actualizar plan",
+      "invoiceHistory": "Historial de facturas",
+      "legal": {
+        "contactInformation": "Contact Information",
+        "legal": "Legal",
+        "phone": "Phone Number of Company",
+        "email": "Email Address of Company",
+        "authorizedRepresentative": "Authorized Representative",
+        "nameRepresentative": "Full Name",
+        "titleRepresentative": "Title",
+        "commercialRegisterInformation": "Commercial Register Information",
+        "commercialRegisterNumber": "Commercial Register Number",
+        "competentRegistryCourt": "Competent Registry Court",
+        "vatInformation": "VAT Information",
+        "vatId": "VAT-ID"
+      }
+    },
+    "profile": {
+      "title": "Perfil",
+      "general": "General",
+      "security": "Seguridad",
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "role": "Rol",
+      "oldPw": "Contraseña anterior",
+      "newPw": "Nueva contraseña",
+      "confirmPw": "Confirmar nueva contraseña",
+      "textPw": "La contraseña debe tener al menos 6 caracteres",
+      "updatePhoto": "Actualizar foto",
+      "uploadPhoto": "Subir foto",
+      "allow": "Permitido * .jpeg, * .jpg, * .png, * .gif"
+    }
+  },
+  "productList": {
+    "title": "Lista de productos",
+    "newProd": "Nuevo producto",
+    "tabs": {
+      "all": "Todos",
+      "online": "En línea",
+      "offline": "Fuera de línea",
+      "error": "Error"
+    },
+    "table": {
+      "state": "Estado",
+      "name": "Nombre",
+      "tags": "Etiquetas",
+      "template": "Plantilla",
+      "version": "Versión",
+      "notPublished": "No publicada todavía"
+    },
+    "search": "Buscar...",
+    "tags": "Etiquetas",
+    "templates": "Plantillas",
+    "noTemplate": "Ninguna plantilla seleccionada",
+    "notPublishedTipp": "Los cambios nuevos aún no se han publicado",
+    "publishedVersion": "Versión publicada: V",
+    "notPublished": "Aún no publicado",
+    "pageEditTipp": "Ir directamente al editor de la página",
+    "dense": "Denso",
+    "rowsPerPage": "Filas por página",
+    "newProdDialog": {
+      "title": "Crear nuevo producto",
+      "name": "Nombre",
+      "customId": "ID de producto personalizada",
+      "tags": "Etiquetas",
+      "customizedTags": "Etiquetas personalizadas",
+      "cancel": "Cancelar",
+      "createNewProd": "Crear nuevo producto"
+    },
+    "details": {
+      "prodName": "Nombre del producto",
+      "latestPublishedVersion": "Última versión publicada: V",
+      "digitalProductLabel": "Etiqueta de producto digital",
+      "productIds": "ID del producto",
+      "customId": "Personalizada ID",
+      "tags": "Etiquetas personalizadas",
+      "template": "Plantilla",
+      "edit": "Editar código QR",
+      "archive": "Archivar producto",
+      "archiveText": "¿Estás seguro de que quieres archivar {{product}}?",
+      "inProgressMessage": {
+        "title": "Aún no publicado",
+        "definition1": "Los cambios no publicados en su etiqueta de producto activan automáticamente una ",
+        "definition2": "nueva versión guardada y no publicada",
+        "definition3": " de su etiqueta de producto.",
+        "definition4": "Esto activa el icono de \"Aún no publicado\"."
+      }
+    }
+  },
+  "overview": {
+    "title": "Hola, bienvenido de nuevo",
+    "guest": "Invitado",
+    "kpis": "KPIs sobre sus productos",
+    "analytics": {
+      "online": "En línea",
+      "progress": "Progreso",
+      "offline": "Fuera de línea",
+      "error": "Errores",
+      "usedProducts": "Productos utilizados",
+      "upgradeProd": "Obtener más productos",
+      "top5Tags": "Top 5 etiquetas por #Productos",
+      "top5Templates": "Top 5 plantillas por #Productos",
+      "performance": "Análisis de rendimiento",
+      "scansPerMonth": "Escaneos este mes",
+      "rebuyClicks": "Clics de recompra este mes",
+      "retention": "Tasa de retención en %",
+      "usedScans": "Presupuesto de escaneos utilizado",
+      "upgradeScan": "Obtener más escaneos"
+    }
+  },
+  "labelEditor": {
+    "orientation": "Orientación",
+    "orientationTT": "Establezca la alineación de los elementos principales. Elija entre izquierda o centrado.",
+    "style": {
+      "layout": "Configuración general de diseño",
+      "card": "Diseño de tarjeta",
+      "cardTT": "Activar o desactivar el tema de la tarjeta",
+      "corners": "Esquinas",
+      "cornersTT": "Activar o desactivar el diseño de esquinas"
+    },
+    "nav": {
+      "cover": "Cover",
+      "design": "Diseño",
+      "widgets": "Widgets",
+      "components": "Componentes",
+      "hoverButton": "Botón al pasar",
+      "languages": "Idiomas"
+    }
+  }
+}
