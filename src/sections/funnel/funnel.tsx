@@ -221,7 +221,7 @@ export default function Funnel({ productPass, language, tags, analytics }: Props
   // ﹟4: Prüfung auf Bild‐Endung (nur anhand des pathname)
   const isImage = /\.(png|jpe?g|webp|gif|bmp)$/i.test(pathname);
   const showPanorama =
-    hoverButton?.childs[1].attributes.ShowPanorama.value[langIndex].val[0] === 'X';
+    hoverButton?.childs?.[1]?.attributes?.ShowPanorama?.value[langIndex].val[0] === 'X';
 
   const [showContent, setShowContent] = useState<boolean>(false);
   const handleStartClick = () => {

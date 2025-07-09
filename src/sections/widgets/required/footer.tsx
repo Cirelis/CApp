@@ -145,7 +145,12 @@ export default function Footer({ widget, langIndex }: Props) {
     >
       {showLogo === 'X' && (
         <Box sx={{ position: 'relative' }}>
-          <Image src={logo} />
+          <Image
+            src={logo}
+            sx={{
+              width: 60,
+            }}
+          />
         </Box>
       )}
       {showWebsite === 'X' && (
@@ -200,7 +205,11 @@ export default function Footer({ widget, langIndex }: Props) {
         spacing={spacing.contentSpacingM[design.style.general.spacing]}
         sx={{ textAlign: orientation, alignItems: orientation }}
       >
-        <Stack direction="row" alignItems="baseline" spacing={spacing.contentSpacingM[design.style.general.spacing]}>
+        <Stack
+          direction="row"
+          alignItems="baseline"
+          spacing={spacing.contentSpacingM[design.style.general.spacing]}
+        >
           <CPara value={text2} font={fontPara} color="#212B36" size="s" fontWeight="bold" />
           <Link href="https://www.cirelis.de">
             <CirelisLogo style={{ height: '20px' }} />
@@ -239,7 +248,11 @@ export default function Footer({ widget, langIndex }: Props) {
           </Link>
         </Stack>
         {showRights === 'X' && (
-          <Stack flexDirection="row" spacing={spacing.spacing2px[design.style.general.spacing]} alignItems="center">
+          <Stack
+            flexDirection="row"
+            spacing={spacing.spacing2px[design.style.general.spacing]}
+            alignItems="center"
+          >
             <Iconify icon="ph:copyright-light" sx={{ color: theme.palette.text.disabled }} />
             <CPara
               value={text6}

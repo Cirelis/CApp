@@ -3,7 +3,7 @@ import { m } from 'framer-motion';
 import React, { useEffect, useRef, useState } from 'react';
 import { _certificatesContent } from 'src/_mock/_certificatesContent';
 import { useGetLabelsById } from 'src/api/product/labels';
-import Carousel, { CarouselDots, useCarousel } from 'src/components/carousel_old';
+import { Carousel, useCarousel, CarouselDotButtons } from 'src/components/carousel';
 import { Image } from 'src/components/image';
 import { useCompanyId } from 'src/hooks/use-company-id';
 import { useDesign } from 'src/hooks/use-design';
@@ -76,21 +76,17 @@ export default function Labels({ widget, langIndex, preview, tags, analytics }: 
     setValidCustoms(customs);
   }, [widget.childs, labels, childsChange, customChange, langIndex]);
 
+  const totalItems = validCerts.length + validCustoms.length;
+
   const carousel = useCarousel({
-    autoplay: true,
-    ...CarouselDots({
-      rounded: true,
-      color: primaryColor,
-      sx: { mt: 1, color: primaryColor },
-    }),
+    align: 'start',
+    slidesToShow: totalItems > 3 ? 3 : totalItems,
   });
 
   const getItemWidth = (count: number) => {
-    if (count === 3) {
-      return 70;
-    }
+
     if (count > 3) {
-      return 60;
+      return 70;
     }
     return 80;
   };
@@ -119,29 +115,14 @@ export default function Labels({ widget, langIndex, preview, tags, analytics }: 
   };
 
   return (
-    <Box
-      sx={{
-        position: 'relative',
-        '& .slick-list': {
-          borderRadius: 2,
-          overflow: 'visible',
-        },
-        minHeight: 50,
-      }}
-    >
-      {/* @ts-expect-error: Custom settings are accepted at runtime but not typed */}
-      <Carousel
-        ref={carousel.carouselRef}
-        {...carousel.carouselSettings}
-        slidesToShow={4} // Show 3 slides at once
-        infinite={false}
-      >
+    <Box sx={{ position: 'relative' }}>
+      <Carousel carousel={carousel}>
         {validCerts.map((item) => (
           <CarouselItem
             key={item.id}
             item={item}
             widgetProps={{ widget, design, langIndex, matomoPath, trackId, analytics, preview }}
-            itemWidth={getItemWidth(validCerts.length)}
+            itemWidth={getItemWidth(totalItems)}
             onOpenPopover={handleOpenPopover}
           />
         ))}
@@ -150,11 +131,31 @@ export default function Labels({ widget, langIndex, preview, tags, analytics }: 
             key={item.id}
             item={item}
             widgetProps={{ widget, design, langIndex, matomoPath, trackId, analytics, preview }}
-            itemWidth={getItemWidth(validCustoms.length)}
+            itemWidth={getItemWidth(totalItems)}
             onOpenPopover={handleOpenPopoverCustom}
           />
         ))}
       </Carousel>
+      {totalItems > 3 && (
+        <Box
+          sx={{
+            mt: 0.5,
+            display: 'flex',
+            borderRadius: 2,
+            alignItems: 'center',
+            flexDirection: 'column',
+          }}
+        >
+          <CarouselDotButtons
+            variant="rounded"
+            scrollSnaps={carousel.dots.scrollSnaps}
+            selectedIndex={carousel.dots.selectedIndex}
+            onClickDot={carousel.dots.onClickDot}
+            sx={{ color: primaryColor }}
+          />
+        </Box>
+      )}
+
       {popover && (
         <CertificatePopover
           widget={widget}
