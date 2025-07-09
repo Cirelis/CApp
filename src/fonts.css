@@ -1,0 +1,174 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-variation-settings:
+  "wdth" 100;
+  font-display: swap;
+  src: local('Roboto'), url('/fonts/Roboto-Regular.ttf') format('truetype');
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-variation-settings:
+  "wdth" 100;
+  font-display: swap;
+  src: local('Roboto'), url('/fonts/Roboto-Bold.ttf') format('truetype');
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  src: local('PublicSans'), url('/fontsSans-Regular.ttf') format('truetype');
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  src: local('PublicSans'), url('/fontsSans-Bold.ttf') format('truetype');
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+@font-face {
+  font-family: 'Open Sans';
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-variation-settings:
+  "wdth" 100;
+  src: local('OpenSans'), url('/fonts/OpenSans-Regular.ttf') format('truetype');
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-variation-settings:
+  "wdth" 100;
+  src: local('OpenSans'), url('/fonts/OpenSans-Bold.ttf') format('truetype');
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  src: local('Lato'), url('/fonts/Lato-Regular.ttf') format('truetype');
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  src: local('Lato'), url('/fonts/Lato-Bold.ttf') format('truetype');
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  src: local('Montserrat'), url('/fonts/Montserrat-Regular.ttf') format('truetype');
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  src: local('Montserrat'), url('/fonts/Montserrat-Bold.ttf') format('truetype');
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  src: local('Oswald'), url('/fonts/Oswald-Regular.ttf') format('truetype');
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  src: local('Oswald'), url('/fonts/Oswald-Bold.ttf') format('truetype');
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  src: local('Raleway'), url('/fonts/Raleway-Regular.ttf') format('truetype');
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  src: local('Raleway'), url('/fonts/Raleway-Bold.ttf') format('truetype');
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('PTSans'), url('/fonts/PTSans-Regular.ttf') format('truetype');
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('PTSans'), url('/fonts/PTSans-Bold.ttf') format('truetype');
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;  /* For WebKit-based browsers */
+  -moz-osx-font-smoothing: grayscale;   /* For Firefox on macOS */
+  text-rendering: optimizeLegibility;   /* For better readability */
+}

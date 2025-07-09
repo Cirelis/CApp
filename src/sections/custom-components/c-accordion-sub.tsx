@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import { styled } from '@mui/material/styles';
-import { AccordionDetails, AccordionSummary, Stack, useTheme } from '@mui/material';
+import { AccordionDetails, AccordionSummary, Box, Stack, useTheme } from '@mui/material';
 import MuiAccordion, { AccordionProps } from '@mui/material/Accordion';
 import { IDesign } from 'src/types/product';
 import { Iconify } from 'src/components/iconify';
@@ -52,7 +52,6 @@ export default function CAccordionSub({
         {/* Accordion Summary */}
         <AccordionSummary
           sx={{
-            p: spacing.containerPadding[design.style.general.spacing],
             bgColor: cardColor,
             my: -spacing.containerPadding[design.style.general.spacing],
           }}
@@ -64,23 +63,28 @@ export default function CAccordionSub({
             />
           }
         >
-          <Stack
-            spacing={spacing.inlineSpacing[design.style.general.spacing]}
-            sx={{ flexDirection: 'row', alignItems: 'center' }}
+          <Box
+            sx={{
+              p: spacing.containerPadding[design.style.general.spacing],
+              my: -spacing.containerPadding[design.style.general.spacing],
+            }}
           >
-            {summary}
-          </Stack>
+            <Stack
+              spacing={spacing.inlineSpacing[design.style.general.spacing]}
+              sx={{ flexDirection: 'row', alignItems: 'center' }}
+            >
+              {summary}
+            </Stack>
+          </Box>
         </AccordionSummary>
 
         {/* Accordion Details */}
         <AccordionDetails
           sx={{
             backgroundColor: cardColor,
-            p: spacing.containerPadding[design.style.general.spacing],
-            pt: 0,
           }}
         >
-          {children}
+          <Box sx={{ p: spacing.containerPadding[design.style.general.spacing] }}> {children}</Box>
         </AccordionDetails>
       </Accordion>
     </>

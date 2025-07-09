@@ -1,6 +1,13 @@
 import { ReactNode, useEffect, useRef } from 'react';
 import { styled } from '@mui/material/styles';
-import { AccordionDetails, AccordionSummary, IconButton, Stack, useTheme } from '@mui/material';
+import {
+  AccordionDetails,
+  AccordionSummary,
+  Box,
+  IconButton,
+  Stack,
+  useTheme,
+} from '@mui/material';
 import MuiAccordion, { AccordionProps } from '@mui/material/Accordion';
 import { IDesign } from 'src/types/product';
 import { Iconify } from 'src/components/iconify';
@@ -78,7 +85,10 @@ export default function CAccordion({
         e.stopPropagation();
         toggle();
       }}
-      sx={{ '&:hover': { backgroundColor: 'transparent' }, p: spacing.containerPadding[design.style.general.spacing] }}
+      sx={{
+        '&:hover': { backgroundColor: 'transparent' },
+        p: spacing.containerPadding[design.style.general.spacing],
+      }}
     >
       <Iconify
         icon={expanded ? 'eva:arrow-ios-upward-fill' : 'eva:arrow-ios-downward-fill'}
@@ -96,29 +106,33 @@ export default function CAccordion({
       >
         <AccordionSummary
           sx={{
-            p: spacing.containerPadding[design.style.general.spacing],
             backgroundColor: design.style.cards.color,
             my: -spacing.containerPadding[design.style.general.spacing],
           }}
           expandIcon={ExpandIconButton}
         >
-          <Stack
-            spacing={spacing.inlineSpacing[design.style.general.spacing]}
-            direction="row"
-            sx={{ alignItems: 'center' }}
+          <Box
+            sx={{
+              p: spacing.containerPadding[design.style.general.spacing],
+              my: -spacing.containerPadding[design.style.general.spacing],
+            }}
           >
-            {summary}
-          </Stack>
+            <Stack
+              spacing={spacing.inlineSpacing[design.style.general.spacing]}
+              direction="row"
+              sx={{ alignItems: 'center' }}
+            >
+              {summary}
+            </Stack>
+          </Box>
         </AccordionSummary>
 
         <AccordionDetails
           sx={{
             backgroundColor: design.style.cards.color,
-            p: spacing.containerPadding[design.style.general.spacing],
-            pt: 0,
           }}
         >
-          {children}
+          <Box sx={{ p: spacing.containerPadding[design.style.general.spacing] }}> {children}</Box>
         </AccordionDetails>
       </Accordion>
     </div>
