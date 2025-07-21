@@ -2,7 +2,7 @@ import type { IconButtonProps } from '@mui/material/IconButton';
 import type { LangCode } from 'src/locales';
 
 import { m } from 'framer-motion';
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { usePopover } from 'minimal-shared/hooks';
 
 import MenuList from '@mui/material/MenuList';
@@ -13,6 +13,7 @@ import { allLangs, useTranslate } from 'src/locales';
 import { FlagIcon } from 'src/components/flag-icon';
 import { CustomPopover } from 'src/components/custom-popover';
 import { varTap, varHover, transitionTap } from 'src/components/animate';
+import { useLang } from 'src/hooks/use-label-language';
 
 // ----------------------------------------------------------------------
 
@@ -25,9 +26,9 @@ type Props = IconButtonProps & {
 export function LabelLanguagePopover({ preview, langIndex, changeLang, sx, ...other }: Props) {
   const { open, anchorEl, onClose, onOpen } = usePopover();
 
-  const { onChangeLang, currentLang } = useTranslate();
-
   const [currentIcon, setCurrentIcon] = useState<string>('');
+  const availLang = useLang();
+
   const locales = useTranslate();
 
   const handleChangeLang = useCallback(
@@ -42,19 +43,36 @@ export function LabelLanguagePopover({ preview, langIndex, changeLang, sx, ...ot
     [locales, preview, onClose, changeLang]
   );
 
+  useEffect(() => {
+    // Update current icon if locale changes outside of this component
+    if (langIndex === 0) {
+      setCurrentIcon('gb');
+    } else if (langIndex === 1) {
+      setCurrentIcon('de');
+    } else if (langIndex === 2) {
+      setCurrentIcon('es');
+    } else if (langIndex === 3) {
+      setCurrentIcon('fr');
+    } else if (langIndex === 4) {
+      setCurrentIcon('it');
+    }
+  }, [langIndex]);
+
   const renderMenuList = () => (
     <CustomPopover open={open} anchorEl={anchorEl} onClose={onClose}>
       <MenuList sx={{ width: 160, minHeight: 72 }}>
-        {allLangs?.map((option) => (
-          <MenuItem
-            key={option.value}
-            selected={option.value === currentLang.value}
-            onClick={() => handleChangeLang(option.value as LangCode)}
-          >
-            <FlagIcon code={option.countryCode} />
-            {option.label}
-          </MenuItem>
-        ))}
+        {allLangs
+          ?.filter((option) => availLang.includes(option.value))
+          .map((option) => (
+            <MenuItem
+              key={option.value}
+              selected={option.value === currentIcon}
+              onClick={() => handleChangeLang(option.value as LangCode)}
+            >
+              <FlagIcon code={option.countryCode} />
+              {option.label}
+            </MenuItem>
+          ))}
       </MenuList>
     </CustomPopover>
   );
@@ -79,7 +97,7 @@ export function LabelLanguagePopover({ preview, langIndex, changeLang, sx, ...ot
         ]}
         {...other}
       >
-        <FlagIcon code={currentLang.countryCode} />
+        <FlagIcon code={currentIcon} />
       </IconButton>
 
       {renderMenuList()}

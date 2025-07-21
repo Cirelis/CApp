@@ -131,14 +131,7 @@ export default function FunnelPage() {
       <meta name="description" content={metadata.description} />
       {show.value && liveProduct && (
         <>
-          <GlobalStyles
-            styles={{
-              '.recording-mode *': {
-                cursor: 'none !important',
-              },
-            }}
-          />
-          <div className="recording-mode" style={{ cursor: 'none', height: '100vh' }}>
+          <div style={{ height: '100vh' }}>
             <FunnelView
               productPass={liveProduct.live}
               companyId={productNoWidgets?.companyId || ''}
@@ -151,20 +144,6 @@ export default function FunnelPage() {
               redirectURL={productNoWidgets?.redirectURL || ''}
             />
           </div>
-          <div
-            style={{
-              position: 'fixed',
-              top: pos.y,
-              left: pos.x,
-              width: 10,
-              height: 10,
-              backgroundColor: 'rgba(0, 0, 0, 0.03)', // fast transparent
-              borderRadius: '50%',
-              pointerEvents: 'none',
-              transform: 'translate(-50%, -50%)',
-              zIndex: 9999,
-            }}
-          />
         </>
       )}
     </Box>
