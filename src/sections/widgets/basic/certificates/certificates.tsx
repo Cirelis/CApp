@@ -84,7 +84,6 @@ export default function Labels({ widget, langIndex, preview, tags, analytics }: 
   });
 
   const getItemWidth = (count: number) => {
-
     if (count > 3) {
       return 70;
     }
@@ -233,55 +232,57 @@ const CarouselItem = React.memo(
 
     return (
       <>
-        {widgetProps.analytics && (
-          <SessionTracker
-            ref={sessionTrackerRef}
-            matomoPath={widgetProps.matomoPath}
-            trackId={widgetProps.trackId}
-            onSessionEnd={(time) => ({})}
-            onSessionTimeUpdate={(time) => ({})}
-          />
-        )}
-        <m.div
-          variants={getVariant('bounceIn')}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            width: '100%',
-            textAlign: 'center',
-          }}
-        >
-          <Card
-            onClick={() => handleOpenDialog(item, widgetProps.widget)}
-            sx={{
-              height: 65,
-              width: itemWidth,
+        <Stack sx={{ mb: spacing.inlineSpacing[design.style.general.spacing] }}>
+          {widgetProps.analytics && (
+            <SessionTracker
+              ref={sessionTrackerRef}
+              matomoPath={widgetProps.matomoPath}
+              trackId={widgetProps.trackId}
+              onSessionEnd={(time) => ({})}
+              onSessionTimeUpdate={(time) => ({})}
+            />
+          )}
+          <m.div
+            variants={getVariant('bounceIn')}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            style={{
               display: 'flex',
-              borderRadius: widgetProps.design.style.cards.borderradius,
-              boxShadow: 5,
               justifyContent: 'center',
               alignItems: 'center',
-              p: spacing.containerPadding[design.style.general.spacing],
+              width: '100%',
+              textAlign: 'center',
             }}
           >
-            <Image
-              alt={title}
-              src={coverUrl}
+            <Card
+              onClick={() => handleOpenDialog(item, widgetProps.widget)}
               sx={{
-                width: 60,
-                height: 1,
-                '& img': {
-                  objectFit: 'contain !important',
-                },
+                height: 65,
+                width: itemWidth,
+                display: 'flex',
+                borderRadius: widgetProps.design.style.cards.borderradius,
+                boxShadow: 5,
+                justifyContent: 'center',
+                alignItems: 'center',
+                p: spacing.containerPadding[design.style.general.spacing],
               }}
-            />
-          </Card>
-          {/* </IconButton> */}
-        </m.div>
+            >
+              <Image
+                alt={title}
+                src={coverUrl}
+                sx={{
+                  width: 60,
+                  height: 1,
+                  '& img': {
+                    objectFit: 'contain !important',
+                  },
+                }}
+              />
+            </Card>
+            {/* </IconButton> */}
+          </m.div>
+        </Stack>
         <CertificateDialog
           widget={widgetProps.widget}
           langIndex={widgetProps.langIndex}
@@ -347,7 +348,7 @@ const CarouselItemCustom = React.memo(
     };
 
     return (
-      <Stack spacing={spacing.inlineSpacing[design.style.general.spacing]}>
+      <Stack sx={{ mb: spacing.inlineSpacing[design.style.general.spacing] }}>
         {widgetProps.analytics && (
           <SessionTracker
             ref={sessionTrackerRef}

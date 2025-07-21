@@ -205,7 +205,7 @@ export default function Footer({ widget, langIndex }: Props) {
         spacing={spacing.contentSpacingM[design.style.general.spacing]}
         sx={{ textAlign: orientation, alignItems: orientation }}
       >
-        <Stack
+        {/* <Stack
           direction="row"
           alignItems="baseline"
           spacing={spacing.contentSpacingM[design.style.general.spacing]}
@@ -214,7 +214,7 @@ export default function Footer({ widget, langIndex }: Props) {
           <Link href="https://www.cirelis.de">
             <CirelisLogo style={{ height: '20px' }} />
           </Link>
-        </Stack>
+        </Stack> */}
         <Stack flexDirection="row" spacing={spacing.contentSpacingM[design.style.general.spacing]}>
           <Link href="https://www.cirelis.de/impressum">
             <CPara
