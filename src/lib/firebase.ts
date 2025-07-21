@@ -16,4 +16,4 @@ export const firebaseApp = isFirebase ? initializeApp(CONFIG.firebase) : ({} as 
 
 export const AUTH = isFirebase ? getAuth(firebaseApp) : ({} as AuthType);
 
-export const FIRESTORE = isFirebase ? getFirestore(firebaseApp, `${CONFIG.firestore}`) : ({} as FirestoreType);
+export const FIRESTORE = isFirebase ? getFirestore(firebaseApp, `${CONFIG.firestore === 'default' ? '' : CONFIG.firestore}`) : ({} as FirestoreType);
