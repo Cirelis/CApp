@@ -2,24 +2,6 @@ import { collection, doc, documentId, query, setDoc, where } from 'firebase/fire
 import { useEffect, useState } from 'react';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { FIRESTORE } from 'src/lib/firebase';
-// ----------------------------------------------------------------------
-
-export async function setStorefinderStores(
-  stores: IStore[],
-  companyId: string
-): Promise<[string, boolean]> {
-  let loading = true;
-  let error = '';
-  try {
-    const docu = doc(FIRESTORE, 'storefinder', companyId);
-    await setDoc(docu, { stores });
-  } catch (fbError:any) {
-    error = fbError;
-    console.log(error);
-    loading = false;
-  }
-  return [error, loading];
-}
 
 // ----------------------------------------------------------------------
 

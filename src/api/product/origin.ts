@@ -4,22 +4,6 @@ import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { FIRESTORE } from 'src/lib/firebase';
 // types
 import { IOrigin } from 'src/types/origin';
-// ----------------------------------------------------------------------
-
-export async function setOrigin(origin: IOrigin, productId: string): Promise<[string, boolean]> {
-  const originCol: IOrigin = { ...origin };
-  let loading = true;
-  let error = '';
-  try {
-    const docu = doc(FIRESTORE, 'origin', productId);
-    await setDoc(docu, originCol);
-  } catch (fbError:any) {
-    error = fbError;
-    console.log(error);
-    loading = false;
-  }
-  return [error, loading];
-}
 
 // ----------------------------------------------------------------------
 

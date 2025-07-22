@@ -67,34 +67,7 @@ export const navData: NavSectionProps['data'] = [
   {
     subheader: 'Overview',
     items: [
-      {
-        title: 'Dashboard',
-        path: paths.dashboard.root,
-        icon: ICONS.dashboard,
-      },
-      {
-        title: 'Funnel',
-        path: paths.dashboard.funnel.root,
-        icon: ICONS.funnel,
-      },
-      {
-        title: 'Analytics',
-        path: paths.dashboard.analytics.root,
-        icon: ICONS.analytics,
-      },
-    ],
-  },
-  /**
-   * Management
-   */
-  {
-    subheader: 'Management',
-    items: [
-      {
-        title: 'Account',
-        path: paths.dashboard.management.root,
-        icon: ICONS.account,
-      },
+
     ],
   },
 ];

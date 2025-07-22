@@ -47,10 +47,10 @@ export function NavVertical({
     <>
       {slots?.topArea ?? (
         <Box sx={{ pl: 3.5, pt: 2.5, pb: 1 }}>
-          <Logo />
+          {/* <Logo /> */}
         </Box>
       )}
-      <NavCompany />
+      {/* <NavCompany /> */}
       <Scrollbar fillContent>
         <NavSectionVertical
           data={data}
@@ -59,7 +59,7 @@ export function NavVertical({
           sx={{ px: 2, flex: '1 1 auto' }}
         />
 
-        {slots?.bottomArea ?? <NavUser />}
+        {/* {slots?.bottomArea ?? <NavUser />} */}
       </Scrollbar>
     </>
   );

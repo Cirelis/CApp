@@ -6,7 +6,7 @@ import LabelLayout from 'src/layouts/label';
 import { SplashScreen } from 'src/components/loading-screen';
 
 // ----------------------------------------------------------------------
-const FunnelPage = lazy(() => import('src/pages/funnel'));
+const FunnelPage = lazy(() => import('src/capp/funnel'));
 
 // ----------------------------------------------------------------------
 export const funnelRoutes = [

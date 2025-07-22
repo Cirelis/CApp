@@ -67,10 +67,10 @@ export function NavMobile({
     >
       {slots?.topArea ?? (
         <Box sx={{ pl: 3.5, pt: 2.5, pb: 1 }}>
-          <Logo />
+          {/* <Logo /> */}
         </Box>
       )}
-      <NavCompanyMini />
+      {/* <NavCompanyMini /> */}
       <Scrollbar fillContent>
         <NavSectionVertical
           data={data}
@@ -78,7 +78,7 @@ export function NavMobile({
           sx={{ px: 2, flex: '1 1 auto' }}
           {...other}
         />
-        <NavUserMini />
+        {/* <NavUserMini /> */}
       </Scrollbar>
 
       {slots?.bottomArea}
