@@ -19,12 +19,6 @@ export function HomeView() {
       <ComingSoonView />
 
       <BackToTopButton />
-      {/* <HomeHero /> */}
-
-      {/* <Stack sx={{ position: 'relative', bgcolor: 'background.default' }}>
-        <HomeMinimal />
-
-      </Stack> */}
     </>
   );
 }

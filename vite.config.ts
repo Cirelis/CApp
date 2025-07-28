@@ -2,6 +2,7 @@ import path from 'path';
 import checker from 'vite-plugin-checker';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
+import { VitePWA } from 'vite-plugin-pwa';
 
 // ----------------------------------------------------------------------
 
@@ -20,6 +21,37 @@ export default defineConfig({
       overlay: {
         position: 'tl',
         initialIsOpen: false,
+      },
+    }),
+    VitePWA({
+      workbox: {
+        maximumFileSizeToCacheInBytes: 25 * 1024 * 1024, // 25 MB
+      },
+      registerType: 'autoUpdate',
+      includeAssets: ['favicon.svg', 'robots.txt', 'apple-touch-icon.png'],
+      manifest: {
+        name: 'Cirelis',
+        short_name: 'App',
+        description: 'Cirelis',
+        theme_color: '#ffffff10',
+        icons: [
+          {
+            src: 'logo/logo-icon.svg',
+            sizes: '192x192',
+            type: 'image/svg',
+          },
+          {
+            src: 'logo/logo-icon.svg',
+            sizes: '512x512',
+            type: 'image/svg',
+          },
+          {
+            src: 'logo/logo-icon.svg',
+            sizes: '512x512',
+            type: 'image/svg',
+            purpose: 'any maskable',
+          },
+        ],
       },
     }),
   ],
