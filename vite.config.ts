@@ -36,17 +36,17 @@ export default defineConfig({
         theme_color: '#ffffff10',
         icons: [
           {
-            src: 'logo/logo-icon.svg',
+            src: 'logo/heart.png',
             sizes: '192x192',
             type: 'image/svg',
           },
           {
-            src: 'logo/logo-icon.svg',
+            src: 'logo/heart.png',
             sizes: '512x512',
             type: 'image/svg',
           },
           {
-            src: 'logo/logo-icon.svg',
+            src: 'logo/heart.png',
             sizes: '512x512',
             type: 'image/svg',
             purpose: 'any maskable',
