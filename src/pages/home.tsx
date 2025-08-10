@@ -5,7 +5,7 @@ import { HomeView } from 'src/sections/home/view';
 const metadata = {
   title: 'Cirelis',
   description:
-    'The starting point for your Story',
+    'Wir bauen Tools, damit green Marketing wieder begeistert!',
 };
 
 export default function Page() {
