@@ -16,7 +16,7 @@ import {
   DensityCompactIcon,
   DensityStandardIcon,
   DensityComfortableIcon,
-} from 'src/theme/core/components/mui-x-data-grid';
+} from 'src/capp/theme/components/mui-x-data-grid';
 
 import { Iconify } from 'src/components/iconify';
 

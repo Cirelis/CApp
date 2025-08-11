@@ -6,16 +6,16 @@ import type {} from '@mui/material/themeCssVarsAugmentation';
 import type { DeepPartial } from './types';
 import type { MixinsExtend } from './core/mixins';
 import type { CustomShadows } from './core/custom-shadows';
-import type { ChipExtendVariant } from './core/components/chip';
-import type { RatingExtendSize } from './core/components/rating';
+import type { ChipExtendVariant } from '../capp/theme/components/chip';
+import type { RatingExtendSize } from '../capp/theme/components/rating';
 import type { TypographyVariantsExtend } from './core/typography';
-import type { BadgeExtendVariant } from './core/components/badge';
-import type { SliderExtendColor } from './core/components/slider';
-import type { ButtonExtendVariant } from './core/components/button';
-import type { FabExtendVariant } from './core/components/button-fab';
-import type { ButtonGroupExtendVariant } from './core/components/button-group';
-import type { AvatarExtendColor, AvatarGroupExtendVariant } from './core/components/avatar';
-import type { PaginationExtendColor, PaginationExtendVariant } from './core/components/pagination';
+import type { BadgeExtendVariant } from '../capp/theme/components/badge';
+import type { SliderExtendColor } from '../capp/theme/components/slider';
+import type { ButtonExtendVariant } from '../capp/theme/components/button';
+import type { FabExtendVariant } from '../capp/theme/components/button-fab';
+import type { ButtonGroupExtendVariant } from '../capp/theme/components/button-group';
+import type { AvatarExtendColor, AvatarGroupExtendVariant } from '../capp/theme/components/avatar';
+import type { PaginationExtendColor, PaginationExtendVariant } from '../capp/theme/components/pagination';
 import type {
   GreyExtend,
   PaletteExtend,
