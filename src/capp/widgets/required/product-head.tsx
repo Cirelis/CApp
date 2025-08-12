@@ -135,7 +135,7 @@ export default function ProductHead({ widget, langIndex, preview, handleChangeLa
               zIndex: 11,
               mt: '-64px',
               borderRadius: productShapeRadius,
-              border: `3px solid ${colorBackground}`,
+              // border: `3px solid ${colorBackground}`,
             }}
           />
         )}

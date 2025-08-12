@@ -8,7 +8,7 @@ import { mixins } from './core/mixins';
 import { shadows } from './core/shadows';
 import { palette } from './core/palette';
 import { themeConfig } from './theme-config';
-import { components } from '../capp/theme/components';
+import { components } from './core/components';
 import { typography } from './core/typography';
 import { customShadows } from './core/custom-shadows';
 import { applySettingsToTheme, applySettingsToComponents } from './with-settings';

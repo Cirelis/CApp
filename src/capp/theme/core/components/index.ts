@@ -36,7 +36,6 @@ import { accordion } from './accordion';
 import { textField } from './text-field';
 import { pagination } from './pagination';
 import { breadcrumbs } from './breadcrumbs';
-import { dataGrid } from './mui-x-data-grid';
 import { treeView } from './mui-x-tree-view';
 import { buttonGroup } from './button-group';
 import { autocomplete } from './autocomplete';
@@ -89,6 +88,5 @@ export const components: Components<Theme> = {
   ...toggleButton,
   // ➤➤ MUI X ➤➤
   ...treeView,
-  ...dataGrid,
   ...datePicker,
 };

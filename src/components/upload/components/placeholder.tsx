@@ -4,7 +4,7 @@ import { mergeClasses } from 'minimal-shared/utils';
 
 import { styled } from '@mui/material/styles';
 
-import { createClasses } from 'src/theme/create-classes';
+import { createClasses } from 'src/capp/theme/create-classes';
 import { UploadIllustration } from 'src/assets/illustrations';
 
 // ----------------------------------------------------------------------

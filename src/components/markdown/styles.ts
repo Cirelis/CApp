@@ -44,7 +44,7 @@ export const MarkdownRoot = styled('div')(({ theme }) => ({
     height: 'auto',
     maxWidth: '100%',
     margin: 'auto auto 1.25em',
-    borderRadius: theme.shape.borderRadius * 2,
+    borderRadius: theme.shape.borderRadius as number * 2,
   },
   /**
    * @List

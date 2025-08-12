@@ -6,7 +6,7 @@ import { usePathname } from 'src/routes/hooks';
 
 import { CONFIG } from 'src/global-config';
 import { LocalizationProvider } from 'src/locales';
-import { themeConfig, ThemeProvider } from 'src/theme';
+import { themeConfig, ThemeProvider } from 'src/capp/theme';
 import { I18nProvider } from 'src/locales/i18n-provider';
 
 import { Snackbar } from 'src/components/snackbar';

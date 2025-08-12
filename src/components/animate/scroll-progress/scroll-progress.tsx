@@ -10,7 +10,7 @@ import Box from '@mui/material/Box';
 import Portal from '@mui/material/Portal';
 import { styled, useTheme } from '@mui/material/styles';
 
-import { createClasses } from 'src/theme/create-classes';
+import { createClasses } from 'src/capp/theme/create-classes';
 
 // ----------------------------------------------------------------------
 

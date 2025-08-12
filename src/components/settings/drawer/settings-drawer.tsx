@@ -12,8 +12,8 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { useColorScheme } from '@mui/material/styles';
 
-import { themeConfig } from 'src/theme';
-import { primaryColorPresets } from 'src/theme/with-settings';
+import { themeConfig } from 'src/capp/theme';
+import { primaryColorPresets } from 'src/capp/theme/with-settings';
 
 import { Label } from 'src/components/label';
 

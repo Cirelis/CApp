@@ -6,6 +6,6 @@ export * from './palette';
 
 export * from './typography';
 
-export * from '../../capp/theme/components';
+export * from './components';
 
 export * from './custom-shadows';
