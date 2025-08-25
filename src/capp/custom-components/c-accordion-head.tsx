@@ -8,9 +8,9 @@ import {
   Stack,
   useTheme,
 } from '@mui/material';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MuiAccordion, { AccordionProps } from '@mui/material/Accordion';
 import { IDesign } from 'src/types/product';
-import { Iconify } from 'src/components/iconify';
 import { spacing } from 'src/styleguide';
 
 type Props = {
@@ -70,38 +70,13 @@ export default function CAccordion({
         }, 200);
       }
     }
-  }, [expanded, preview]);
-
-  const toggle = (_e?: React.MouseEvent, wantExpand?: boolean) => {
-    const next = wantExpand ?? !expanded;
-    onExpandAccordion(next);
-  };
-
-  const ExpandIconButton = (
-    <IconButton
-      size="small"
-      onClick={(e) => {
-        // prevent the outer AccordionSummary from also toggling
-        e.stopPropagation();
-        toggle();
-      }}
-      sx={{
-        '&:hover': { backgroundColor: 'transparent' },
-        p: spacing.containerPadding[design.style.general.spacing],
-      }}
-    >
-      <Iconify
-        icon={expanded ? 'eva:arrow-ios-upward-fill' : 'eva:arrow-ios-downward-fill'}
-        color={design.typography.headlines.color || theme.palette.text.primary}
-      />
-    </IconButton>
-  );
+  }, [expanded]);
 
   return (
     <div ref={accordionRef}>
       <Accordion
         expanded={expanded}
-        onChange={preview && expanded === true ? undefined : handleAccordionChange}
+        onChange={handleAccordionChange}
         sx={{ backgroundColor: design.style.cards.color, p: 0 }}
       >
         <AccordionSummary
@@ -109,7 +84,7 @@ export default function CAccordion({
             backgroundColor: design.style.cards.color,
             my: -spacing.containerPadding[design.style.general.spacing],
           }}
-          expandIcon={ExpandIconButton}
+          expandIcon={<ExpandMoreIcon />}
         >
           <Box
             sx={{

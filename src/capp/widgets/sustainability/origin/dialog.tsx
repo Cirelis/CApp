@@ -196,7 +196,7 @@ export default function LocationDialog({
                             onClick={() => handleWebClicked(dialogData.webUrl!)}
                           >
                             <Stack direction="row" alignItems="center">
-                              <Typography>Webeite</Typography>
+                              <Typography>Website</Typography>
                               <Iconify icon="mdi:arrow-top-right" />
                             </Stack>
                           </CButton>

@@ -209,7 +209,7 @@ export default function Storefinder({
     const markerInstance = markerRefs.current[key];
     const mapContainer = document.getElementById('map-container');
     if (mapContainer) {
-      mapContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      mapContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
     if (markerClusterRef.current && markerInstance) {
       markerClusterRef.current.zoomToShowLayer(markerInstance, () => {
@@ -290,7 +290,7 @@ export default function Storefinder({
         design={design}
         summary={
           <>
-            <Stack sx={{ p: 0.1 }}>
+            <Stack sx={{ p: 0.1 }} id="map-container">
               <Iconify
                 icon="solar:streets-map-point-bold-duotone"
                 color={design.style.icons.iconColor}
@@ -315,7 +315,7 @@ export default function Storefinder({
         <Stack spacing={spacing.contentSpacingM[design.style.general.spacing]}>
           {/* Normal inline map (only visible when NOT fullscreen) */}
           {!isFullScreen && (
-            <Box id="map-container" sx={{ position: 'relative' }}>
+            <Box sx={{ position: 'relative' }}>
               <MapContainer scrollWheelZoom={!preview} style={inlineMapStyle} className="no-drag">
                 <TileLayer
                   attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -402,7 +402,6 @@ export default function Storefinder({
                 <Iconify icon="mdi:fullscreen-exit" />
               </IconButton>
               <MapContainer
-                id="map-container"
                 scrollWheelZoom={!preview}
                 style={{ width: '100%', height: '100%' }}
                 className="no-drag"

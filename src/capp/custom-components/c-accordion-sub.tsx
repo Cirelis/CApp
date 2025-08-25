@@ -2,8 +2,8 @@ import { ReactNode } from 'react';
 import { styled } from '@mui/material/styles';
 import { AccordionDetails, AccordionSummary, Box, Stack, useTheme } from '@mui/material';
 import MuiAccordion, { AccordionProps } from '@mui/material/Accordion';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { IDesign } from 'src/types/product';
-import { Iconify } from 'src/components/iconify';
 import { spacing, spacingInnerWidgets } from 'src/styleguide';
 
 type Props = {
@@ -55,13 +55,7 @@ export default function CAccordionSub({
             bgColor: cardColor,
             my: -spacing.containerPadding[design.style.general.spacing],
           }}
-          expandIcon={
-            <Iconify
-              icon="eva:arrow-ios-downward-fill"
-              color={colorHeadlines}
-              sx={{ m: spacing.containerPadding[design.style.general.spacing] }}
-            />
-          }
+          expandIcon={<ExpandMoreIcon />}
         >
           <Box
             sx={{
