@@ -15,16 +15,24 @@ import { MotionLazy } from 'src/components/animate/motion-lazy';
 import { SettingsDrawer, defaultSettings, SettingsProvider } from 'src/components/settings';
 
 import { AuthProvider as FirebaseAuthProvider } from 'src/auth/context/firebase';
+import { MatomoProvider, createInstance } from '@datapunt/matomo-tracker-react';
 
 // ----------------------------------------------------------------------
 
-const AuthProvider = FirebaseAuthProvider
+const AuthProvider = FirebaseAuthProvider;
 
 // ----------------------------------------------------------------------
 
 type AppProps = {
   children: React.ReactNode;
 };
+
+const instance = createInstance({
+  urlBase: CONFIG.matomoUrl || '',
+  siteId: 1,
+});
+
+const MP = MatomoProvider as unknown as React.FC<React.PropsWithChildren<{ value: any }>>;
 
 export default function App({ children }: AppProps) {
   useScrollToTop();
@@ -38,12 +46,14 @@ export default function App({ children }: AppProps) {
               modeStorageKey={themeConfig.modeStorageKey}
               defaultMode={themeConfig.defaultMode}
             >
-              <MotionLazy>
+              <MP value={instance}>
+                <MotionLazy>
                   <Snackbar />
                   <ProgressBar />
                   <SettingsDrawer defaultSettings={defaultSettings} />
                   {children}
-              </MotionLazy>
+                </MotionLazy>
+              </MP>
             </ThemeProvider>
           </LocalizationProvider>
         </SettingsProvider>
