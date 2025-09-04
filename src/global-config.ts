@@ -67,5 +67,5 @@ export const CONFIG: ConfigValue = {
   backendServer: import.meta.env.VITE_BACKENDSERVER ?? '',
   backendUser: import.meta.env.VITE_BACKENDUSER ?? '',
   backendPw: import.meta.env.VITE_BACKENDPW ?? '',
-  matomoUrl: import.meta.env.VITE_MATOMOURL?? '',
+  matomoUrl: import.meta.env.VITE_MATOMOURL ?? '',
 };
