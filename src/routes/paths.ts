@@ -58,6 +58,7 @@ export const paths = {
     label: {
       root: ROOTS.FUNNEL,
       funnelId: (funnelId: string) => `${ROOTS.FUNNEL}/${funnelId}`,
+      gtin: (gtin: string) => `${ROOTS.FUNNEL}/01/${gtin}`,
     },
     saved: {
       root: ROOTS.SAVED,

@@ -7,6 +7,7 @@ import { SplashScreen } from 'src/components/loading-screen';
 
 // ----------------------------------------------------------------------
 const FunnelPage = lazy(() => import('src/capp/funnel'));
+const DigitalLink = lazy(() => import('src/capp/digitalLink'));
 
 // ----------------------------------------------------------------------
 export const funnelRoutes = [
@@ -23,6 +24,24 @@ export const funnelRoutes = [
         element: (
           <LabelLayout>
             <FunnelPage />
+          </LabelLayout>
+        ),
+      },
+    ],
+  },
+  {
+    path: '01',
+    element: (
+      <Suspense fallback={<SplashScreen />}>
+        <Outlet />
+      </Suspense>
+    ),
+    children: [
+      {
+        path: ':gtin',
+        element: (
+          <LabelLayout>
+            <DigitalLink />
           </LabelLayout>
         ),
       },
