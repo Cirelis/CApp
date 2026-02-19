@@ -1,10 +1,4 @@
-import {
-  query,
-  collection,
-  where,
-  documentId,
-  getDocs,
-} from 'firebase/firestore';
+import { query, collection, where, documentId, getDocs } from 'firebase/firestore';
 import { useState, useEffect } from 'react';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { FIRESTORE } from 'src/lib/firebase';
@@ -52,6 +46,7 @@ const InitialGetProduct: GetProduct = {
     template: '',
     templateId: '',
     tempChangeAt: '',
+    points: '',
     redirect: '',
     redirectURL: '',
     company: '',
@@ -87,7 +82,7 @@ const InitialGetProduct: GetProduct = {
           general: {
             topButton: true,
             widgetSpacing: 'S',
-            spacing: 'S'
+            spacing: 'S',
           },
           buttons: {
             variant: '',
@@ -149,7 +144,7 @@ const InitialGetProduct: GetProduct = {
           general: {
             topButton: true,
             widgetSpacing: 'S',
-            spacing: 'S'
+            spacing: 'S',
           },
           buttons: {
             variant: '',
@@ -380,7 +375,7 @@ export async function fetchProductWidgets(product: IProduct): Promise<IProduct> 
     };
 
     return updatedProduct;
-  } catch (error:any) {
+  } catch (error: any) {
     console.error('Failed to fetch widgets:', error);
     throw error;
   }
@@ -395,12 +390,11 @@ export async function getProduct(productId: string): Promise<IProduct> {
     const querySnapshot = await getDocs(productQuery);
     const updatedProduct = querySnapshot.docs.map((queryDoc) => queryDoc.data() as IProduct);
     return updatedProduct[0];
-  } catch (error:any) {
+  } catch (error: any) {
     console.error('Failed to fetch product:', error);
     throw error;
   }
 }
-
 
 export async function fetchAttributesWidgets(productId: string): Promise<IWidget[]> {
   if (!productId) {
@@ -418,7 +412,7 @@ export async function fetchAttributesWidgets(productId: string): Promise<IWidget
     const widgets = querySnapshot.docs.map((queryDoc) => queryDoc.data() as IWidget);
 
     return widgets;
-  } catch (error:any) {
+  } catch (error: any) {
     console.error('Failed to fetch widgets:', error);
     throw error;
   }

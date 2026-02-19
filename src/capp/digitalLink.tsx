@@ -28,8 +28,7 @@ function isSameMonth(t1: string, t2: string): boolean {
 
 const metadata = {
   title: 'Cirelis',
-  description:
-    'The starting point for your Story',
+  description: 'The starting point for your Story',
 };
 
 export default function FunnelPage() {
@@ -140,7 +139,9 @@ export default function FunnelPage() {
               language={productNoWidgets?.defaultLang || 'en'}
               tags={productNoWidgets?.tags}
               analytics={analytics.value}
+              sku={productNoWidgets?.secondary || ''}
               redirect={productNoWidgets?.redirect || ''}
+              points={productNoWidgets?.points || ''}
               redirectURL={productNoWidgets?.redirectURL || ''}
             />
           </div>

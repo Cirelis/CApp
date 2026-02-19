@@ -29,6 +29,7 @@ export type IProduct = {
   template: string;
   templateId: string;
   tempChangeAt: string;
+  points: string;
   redirect: string;
   redirectURL: string;
   company: string;

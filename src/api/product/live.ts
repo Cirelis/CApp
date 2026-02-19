@@ -38,6 +38,7 @@ const InitialGetProduct: GetProduct = {
     template: '',
     templateId: '',
     tempChangeAt: '',
+    points: '',
     redirect: '',
     redirectURL: '',
     company: '',

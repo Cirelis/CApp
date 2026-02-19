@@ -29,6 +29,7 @@ export type ConfigValue = {
   backendUser: string;
   backendPw: string;
   matomoUrl: string;
+  apiEmbed: string;
 };
 
 // ----------------------------------------------------------------------
@@ -68,4 +69,5 @@ export const CONFIG: ConfigValue = {
   backendUser: import.meta.env.VITE_BACKENDUSER ?? '',
   backendPw: import.meta.env.VITE_BACKENDPW ?? '',
   matomoUrl: import.meta.env.VITE_MATOMOURL ?? '',
+  apiEmbed: import.meta.env.VITE_API_EMBED ?? ','
 };

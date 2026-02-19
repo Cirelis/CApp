@@ -4,6 +4,7 @@ import { _design } from 'src/_mock';
 import { AppProviders } from 'src/hooks/app-providers';
 import { IProductPass } from 'src/types/product';
 import Funnel from './funnel';
+import { CONFIG } from 'src/global-config';
 
 type Props = {
   productPass: IProductPass | undefined;
@@ -13,6 +14,8 @@ type Props = {
   language: string;
   tags: string[] | undefined;
   analytics: boolean;
+  sku: string;
+  points: string;
   redirect: string;
   redirectURL: string;
 };
@@ -25,6 +28,8 @@ export default function FunnelView({
   language,
   tags,
   analytics,
+  sku,
+  points,
   redirect,
   redirectURL,
 }: Props) {
@@ -70,9 +75,25 @@ export default function FunnelView({
     }
   }, [trackId, analytics, trackEvent, trackPageView, redirect, redirectURL, language]);
 
+  if (points === 'X') {
+    return (
+      <>
+        <div
+          data-rt-button
+          // data-customer={companyId}
+          data-customer="68201676931"
+          data-funnel={sku}
+          data-cartId="cirelis-funnel"
+          data-text="Goodies speichern!"
+        />
+        <script async src={CONFIG.apiEmbed} />
+      </>
+    );
+  }
+
   return (
     <>
-      {redirect ? null : (
+      {redirect || points === 'X' ? null : (
         <AppProviders
           availLanguage={availLang}
           companyId={companyId}
