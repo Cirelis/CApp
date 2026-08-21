@@ -78,15 +78,15 @@ export default function FunnelView({
   if (points === 'X') {
     return (
       <>
-        <div
+        {/* <div
           data-rt-button
-          // data-customer={companyId}
-          data-customer="68201676931"
+          data-customer={companyId}
+          // data-customer="68201676931"
           data-funnel={sku}
-          data-cartId="cirelis-funnel"
+          data-cartId="direct"
           data-text="Goodies speichern!"
         />
-        <script async src={CONFIG.apiEmbed} />
+        <script async src={CONFIG.apiEmbed} /> */}
       </>
     );
   }
